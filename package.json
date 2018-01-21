@@ -29,6 +29,7 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"airplay-protocol": "^2.0.2",
 		"mri": "^1.1.0"
 	}
 }

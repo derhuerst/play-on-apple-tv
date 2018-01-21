@@ -1,3 +1,37 @@
 'use strict'
 
-// todo
+const AirPlay = require('airplay-protocol')
+
+const play = (audioUrl, address, cb) => {
+	const device = new AirPlay(address)
+
+	const getInfo = () => {
+		device.playbackInfo((err, res, playbackInfo) => {
+			setTimeout(getInfo, 2000)
+
+			if (err) return device.emit('error', err)
+			device.emit('playbackInfo', playbackInfo)
+		})
+	}
+
+	device.play(audioUrl, (err) => {
+		if (err) return cb(err)
+
+		const waitForPlay = () => {
+			device.playbackInfo((err, res, playbackInfo) => {
+				if (err) return cb(err)
+
+				device.emit('playbackInfo', playbackInfo)
+				if (playbackInfo && playbackInfo.readyToPlay) {
+					getInfo()
+					cb()
+				} else setTimeout(waitForPlay, 500)
+			})
+		}
+		waitForPlay()
+	})
+
+	return device
+}
+
+module.exports = play
