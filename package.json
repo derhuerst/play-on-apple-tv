@@ -30,6 +30,11 @@
 	},
 	"dependencies": {
 		"airplay-protocol": "^2.0.2",
-		"mri": "^1.1.0"
+		"ansi-diff-stream": "^1.2.0",
+		"ansi-escapes": "^3.0.0",
+		"chalk": "^2.3.0",
+		"flatten-overlapping-ranges": "^0.1.1",
+		"mri": "^1.1.0",
+		"window-size": "^1.1.0"
 	}
 }

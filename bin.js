@@ -6,6 +6,7 @@ const mri = require('mri')
 const pkg = require('./package.json')
 
 const play = require('.')
+const showUI = require('./lib/ui')
 
 const showError = (err) => {
 	console.error(err)
@@ -47,3 +48,5 @@ device.on('error', showError)
 process.once('beforeExit', () => {
 	device.stop()
 })
+
+showUI(device)
