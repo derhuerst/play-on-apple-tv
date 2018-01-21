@@ -1,0 +1,34 @@
+{
+	"name": "play-on-apple-tv",
+	"description": "A command line tool to play any audio/video on an Apple TV.",
+	"version": "0.1.0",
+	"main": "index.js",
+	"bin": {
+		"play-on-apple-tv": "./bin.js"
+	},
+	"files": [
+		"index.js",
+		"bin.js",
+		"lib"
+	],
+	"keywords": [
+		"co.up",
+		"coup",
+		"berlin",
+		"music",
+		"airplay",
+		"airtunes",
+		"apple tv"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/play-on-apple-tv",
+	"repository": "derhuerst/play-on-apple-tv",
+	"bugs": "https://github.com/derhuerst/play-on-apple-tv/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+		"mri": "^1.1.0"
+	}
+}
