@@ -2,6 +2,8 @@
 
 **A command line tool to play any audio/video on an [Apple TV](https://en.wikipedia.org/wiki/Apple_TV).**
 
+[![asciicast](https://asciinema.org/a/158258.png)](https://asciinema.org/a/158258)
+
 [![npm version](https://img.shields.io/npm/v/play-on-apple-tv.svg)](https://www.npmjs.com/package/play-on-apple-tv)
 [![build status](https://api.travis-ci.org/derhuerst/play-on-apple-tv.svg?branch=master)](https://travis-ci.org/derhuerst/play-on-apple-tv)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/play-on-apple-tv.svg)
