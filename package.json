@@ -33,6 +33,7 @@
 		"ansi-diff-stream": "^1.2.0",
 		"ansi-escapes": "^3.0.0",
 		"chalk": "^2.3.0",
+		"lodash": "^4.17.15",
 		"mri": "^1.1.0",
 		"pretty-bytes": "^5.3.0",
 		"pretty-ms": "^5.0.0"
