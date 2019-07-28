@@ -2,7 +2,7 @@
 
 const AirPlay = require('airplay-protocol')
 
-const play = (audioUrl, address, cb) => {
+const play = (mediaUrl, address, cb) => {
 	const device = new AirPlay(address)
 
 	const getInfo = () => {
@@ -14,7 +14,7 @@ const play = (audioUrl, address, cb) => {
 		})
 	}
 
-	device.play(audioUrl, (err) => {
+	device.play(mediaUrl, (err) => {
 		if (err) return cb(err)
 
 		const waitForPlay = () => {

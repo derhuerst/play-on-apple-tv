@@ -5,9 +5,9 @@
 [![asciicast](https://asciinema.org/a/158258.png)](https://asciinema.org/a/158258)
 
 [![npm version](https://img.shields.io/npm/v/play-on-apple-tv.svg)](https://www.npmjs.com/package/play-on-apple-tv)
-[![build status](https://api.travis-ci.org/derhuerst/play-on-apple-tv.svg?branch=master)](https://travis-ci.org/derhuerst/play-on-apple-tv)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/play-on-apple-tv.svg)
 [![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
+[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
 
 
 ## Usage
@@ -18,10 +18,16 @@ Using [npx](https://www.npmjs.com/package/npx):
 npx play-on-apple-tv 'http://some-server/some-media-file.mp3' 'my-apple-tv.local'
 ```
 
-Find the address of your Apple TV using this command:
+Find the name of your Apple TV using [bonjour-browser](https://www.npmjs.com/package/bonjour-browser):
 
 ```shell
 npx bonjour-browser | grep '_airplay._tcp.local'
+```
+
+Play a Youtube video by finding the raw video url using [`youtube-dl`](https://youtube-dl.org):
+
+```shell
+npx play-on-apple-tv $(youtube-dl -f 136 --get-url 'https://www.youtube.com/watch?v=jNQXAC9IVRw') my-apple-tv.local
 ```
 
 

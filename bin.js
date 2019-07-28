@@ -25,7 +25,7 @@ if (argv.h || argv.help) {
 ${pkg.description}
 
 Usage:
-	play-on-apple-tv <audio-url> <apple-tv-address>
+	play-on-apple-tv <media-url> <apple-tv-address>
 `)
 	process.exit(0)
 }
@@ -35,12 +35,12 @@ if (argv.v || argv.version) {
 	process.exit(0)
 }
 
-const audioUrl = argv._[0]
-if (!audioUrl) showError('Missing audio-url argument.')
+const mediaUrl = argv._[0]
+if (!mediaUrl) showError('Missing media-url argument.')
 const appleTvAddress = argv._[1]
 if (!appleTvAddress) showError('Missing apple-tv-address argument.')
 
-const device = play(audioUrl, appleTvAddress, (err) => {
+const device = play(mediaUrl, appleTvAddress, (err) => {
 	if (err) showError(err)
 })
 device.on('error', showError)
