@@ -14,8 +14,9 @@
 
 Using [`npx`](https://www.npmjs.com/package/npx):
 
-```js
-npx play-on-apple-tv 'http://some-server/some-media-file.mp3' my-apple-tv.local
+```shell
+npx play-on-apple-tv some-audio-file.mp3 my-apple-tv.local
+npx play-on-apple-tv 'http://some-server/some-audio-file.mp3' my-apple-tv.local
 ```
 
 Find the name of your Apple TV using [bonjour-browser](https://www.npmjs.com/package/bonjour-browser):

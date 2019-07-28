@@ -2,7 +2,6 @@
 'use strict'
 
 const mri = require('mri')
-
 const pkg = require('./package.json')
 
 const play = require('.')
@@ -25,6 +24,7 @@ if (argv.h || argv.help) {
 ${pkg.description}
 
 Usage:
+	play-on-apple-tv <path-to-media-file> <apple-tv-address>
 	play-on-apple-tv <media-url> <apple-tv-address>
 `)
 	process.exit(0)

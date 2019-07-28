@@ -1,7 +1,7 @@
 {
 	"name": "play-on-apple-tv",
 	"description": "A command line tool to play any audio/video on an Apple TV.",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"main": "index.js",
 	"bin": {
 		"play-on-apple-tv": "./bin.js"
@@ -33,9 +33,12 @@
 		"ansi-diff-stream": "^1.2.0",
 		"ansi-escapes": "^3.0.0",
 		"chalk": "^2.3.0",
+		"get-port": "^5.0.0",
+		"internal-ip": "^4.3.0",
 		"lodash": "^4.17.15",
 		"mri": "^1.1.0",
 		"pretty-bytes": "^5.3.0",
-		"pretty-ms": "^5.0.0"
+		"pretty-ms": "^5.0.0",
+		"send": "^0.17.1"
 	}
 }
