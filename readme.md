@@ -12,16 +12,16 @@
 
 ## Usage
 
-Using [npx](https://www.npmjs.com/package/npx):
+Using [`npx`](https://www.npmjs.com/package/npx):
 
 ```js
-npx play-on-apple-tv 'http://some-server/some-media-file.mp3' 'my-apple-tv.local'
+npx play-on-apple-tv 'http://some-server/some-media-file.mp3' my-apple-tv.local
 ```
 
 Find the name of your Apple TV using [bonjour-browser](https://www.npmjs.com/package/bonjour-browser):
 
 ```shell
-npx bonjour-browser | grep '_airplay._tcp.local'
+npx bonjour-browser | grep airplay
 ```
 
 Play a Youtube video by finding the raw video url using [`youtube-dl`](https://youtube-dl.org):
