@@ -28,12 +28,13 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"@derhuerst/cli-on-key": "^0.1.0",
 		"airplay-protocol": "^2.0.2",
 		"ansi-diff-stream": "^1.2.0",
 		"ansi-escapes": "^3.0.0",
 		"chalk": "^2.3.0",
-		"flatten-overlapping-ranges": "^0.1.1",
 		"mri": "^1.1.0",
-		"window-size": "^1.1.0"
+		"pretty-bytes": "^5.3.0",
+		"pretty-ms": "^5.0.0"
 	}
 }
