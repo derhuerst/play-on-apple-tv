@@ -84,8 +84,8 @@ const play = (urlOrFile, address, cb) => {
 	const device = new AirPlay(address)
 
 	if (isUrl(urlOrFile)) {
-		airplay.play(mediaUrl, (err) => {
-			if (err) airplay.destroy()
+		device.play(urlOrFile, (err) => {
+			if (err) device.destroy()
 			cb(err)
 		})
 	} else {

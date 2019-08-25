@@ -1,7 +1,7 @@
 {
 	"name": "play-on-apple-tv",
 	"description": "A command line tool to play any audio/video on an Apple TV.",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"main": "index.js",
 	"bin": {
 		"play-on-apple-tv": "./bin.js"
