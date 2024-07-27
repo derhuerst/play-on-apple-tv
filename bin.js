@@ -1,11 +1,12 @@
 #!/usr/bin/env node
-'use strict'
 
-const mri = require('mri')
+// todo: use import assertions once they're supported by Node.js & ESLint
+// https://github.com/tc39/proposal-import-assertions
+import {createRequire} from 'module'
+const require = createRequire(import.meta.url)
+
+import mri from 'mri'
 const pkg = require('./package.json')
-
-const play = require('.')
-const showUI = require('./lib/ui')
 
 const showError = (err) => {
 	console.error(err)
@@ -44,6 +45,9 @@ if (argv.v || argv.version) {
 	process.stdout.write('coup-play ' + pkg.version + '\n')
 	process.exit(0)
 }
+
+import {playOnAppleTv as play} from './index.js'
+import {showUI} from './lib/ui.js'
 
 const mediaUrl = argv._[0]
 if (!mediaUrl) showError('Missing media-url argument.')

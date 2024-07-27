@@ -2,6 +2,7 @@
 	"name": "play-on-apple-tv",
 	"description": "A command line tool to play any audio/video on an Apple TV.",
 	"version": "1.2.0",
+	"type": "module",
 	"main": "index.js",
 	"bin": {
 		"play-on-apple-tv": "./bin.js"
@@ -25,7 +26,7 @@
 	"bugs": "https://github.com/derhuerst/play-on-apple-tv/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=8"
+		"node": ">=20"
 	},
 	"dependencies": {
 		"@derhuerst/cli-on-key": "^0.1.0",

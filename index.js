@@ -1,14 +1,11 @@
-'use strict'
-
-const {URL} = require('url')
-const {createServer} = require('http')
-const send = require('send')
-const {promisify} = require('util')
-const {realpath} = require('fs')
-const {dirname, basename, extname} = require('path')
-const getPort = require('get-port')
-const internalIp = require('internal-ip')
-const AirPlay = require('airplay-protocol')
+import {URL} from 'node:url'
+import {createServer} from 'node:http'
+import send from 'send'
+import {realpath as pRealpath} from 'node:fs/promises'
+import {dirname, basename} from 'node:path'
+import getPort from 'get-port'
+import internalIp from 'internal-ip'
+import AirPlay from 'airplay-protocol'
 
 const noop = () => {}
 
@@ -44,7 +41,6 @@ const serveFile = (pathToFile, addr, port) => {
 	})
 }
 
-const pRealpath = promisify(realpath)
 const playWithFile = (airplay, pathToFile, cb) => {
 	Promise.all([
 		pRealpath(pathToFile),
@@ -80,7 +76,7 @@ const playWithFile = (airplay, pathToFile, cb) => {
 	.catch(cb)
 }
 
-const play = (urlOrFile, address, cb) => {
+const playOnAppleTv = (urlOrFile, address, cb) => {
 	const device = new AirPlay(address)
 
 	if (isUrl(urlOrFile)) {
@@ -95,4 +91,6 @@ const play = (urlOrFile, address, cb) => {
 	return device
 }
 
-module.exports = play
+export {
+	playOnAppleTv,
+}
