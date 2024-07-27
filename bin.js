@@ -26,6 +26,16 @@ ${pkg.description}
 Usage:
 	play-on-apple-tv <path-to-media-file> <apple-tv-address>
 	play-on-apple-tv <media-url> <apple-tv-address>
+
+Notes:
+    Find the name of your Apple TV using bonjour-browser [1]:
+    \`npx bonjour-browser | grep airplay\`
+
+    Play a Youtube video by finding the raw video url using yt-dlp [2]:
+    \`npx play-on-apple-tv $(yt-dlp -f 140 --get-url 'https://www.youtube.com/watch?v=jNQXAC9IVRw') my-apple-tv.local\`
+
+    [1] https://www.npmjs.com/package/bonjour-browser
+    [2] https://github.com/yt-dlp/yt-dlp
 `)
 	process.exit(0)
 }
