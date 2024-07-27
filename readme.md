@@ -25,10 +25,10 @@ Find the name of your Apple TV using [bonjour-browser](https://www.npmjs.com/pac
 npx bonjour-browser | grep airplay
 ```
 
-Play a Youtube video by finding the raw video url using [`youtube-dl`](https://youtube-dl.org):
+Play a Youtube video by finding the raw video url using [`yt-dlp`](https://github.com/yt-dlp/yt-dlp):
 
 ```shell
-npx play-on-apple-tv $(youtube-dl -f 136 --get-url 'https://www.youtube.com/watch?v=jNQXAC9IVRw') my-apple-tv.local
+npx play-on-apple-tv $(yt-dlp -f 40 --get-url 'https://www.youtube.com/watch?v=jNQXAC9IVRw') my-apple-tv.local
 ```
 
 
