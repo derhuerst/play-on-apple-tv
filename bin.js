@@ -42,7 +42,7 @@ Notes:
 }
 
 if (argv.v || argv.version) {
-	process.stdout.write('coup-play ' + pkg.version + '\n')
+	process.stdout.write(`${pkg.name} ${pkg.version}\n`)
 	process.exit(0)
 }
 
