@@ -4,7 +4,7 @@ import send from 'send'
 import {realpath as pRealpath} from 'node:fs/promises'
 import {dirname, basename} from 'node:path'
 import getPort from 'get-port'
-import internalIp from 'internal-ip'
+import {internalIpV4} from 'internal-ip'
 import AirPlay from 'airplay-protocol'
 
 const noop = () => {}
@@ -44,7 +44,7 @@ const serveFile = (pathToFile, addr, port) => {
 const playWithFile = (airplay, pathToFile, cb) => {
 	Promise.all([
 		pRealpath(pathToFile),
-		internalIp.v4(),
+		internalIpV4(),
 		getPort()
 	])
 	.then(([pathToFile, addr, port]) => {

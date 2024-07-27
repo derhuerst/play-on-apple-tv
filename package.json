@@ -32,15 +32,15 @@
 		"@derhuerst/cli-on-key": "^0.1.0",
 		"airplay-protocol": "^2.0.2",
 		"ansi-diff-stream": "^1.2.0",
-		"ansi-escapes": "^4.3.2",
-		"chalk": "^3.0.0",
-		"get-port": "^5.0.0",
-		"internal-ip": "^5.0.0",
+		"ansi-escapes": "^7.0.0",
+		"chalk": "^5.3.0",
+		"get-port": "^7.1.0",
+		"internal-ip": "^8.0.0",
 		"lodash": "^4.17.15",
 		"mri": "^1.1.0",
-		"pretty-bytes": "^5.3.0",
-		"pretty-ms": "^5.0.0",
-		"send": "^0.18.0"
+		"pretty-bytes": "^6.1.1",
+		"pretty-ms": "^9.1.0",
+		"send": "^1.0.0"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.0.0",
