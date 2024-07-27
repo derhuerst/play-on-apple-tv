@@ -6,8 +6,9 @@
 
 [![npm version](https://img.shields.io/npm/v/play-on-apple-tv.svg)](https://www.npmjs.com/package/play-on-apple-tv)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/play-on-apple-tv.svg)
-[![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
-[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
+![minimum Node.js version](https://img.shields.io/node/v/play-on-apple-tv.svg)
+[![support me via GitHub Sponsors](https://img.shields.io/badge/support%20me-donate-fa7664.svg)](https://github.com/sponsors/derhuerst)
+[![chat with me via Matrix](https://img.shields.io/badge/chat%20with%20me-via%20Matrix-000000.svg)](https://matrix.to/#/@derhuerst:matrix.org)
 
 
 ## Usage
