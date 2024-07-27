@@ -41,5 +41,14 @@
 		"pretty-bytes": "^5.3.0",
 		"pretty-ms": "^5.0.0",
 		"send": "^0.18.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.0.0",
+		"eslint": "^9.0.0",
+		"globals": "^15.0.0"
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"prepublishOnly": "npm run lint"
 	}
 }
